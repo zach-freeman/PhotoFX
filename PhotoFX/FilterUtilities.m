@@ -20,7 +20,7 @@
 }
 
 +(GPUImageFilter*)selectedFilter:(NSInteger)buttonIndex {
-    GPUImageFilter *selectedFilter;
+    GPUImageFilter *selectedFilter = nil;
     
     switch (buttonIndex) {
         case 0:
@@ -50,7 +50,6 @@
         case 8:
             selectedFilter = [[GPUImageFilter alloc] init];
             break;
-
         default:
             break;
     }

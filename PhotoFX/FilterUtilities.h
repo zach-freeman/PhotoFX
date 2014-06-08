@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "GPUImage.h"
 
-@interface FilterUtilities : NSObject
+@interface FilterUtilities : NSObject 
 
 +(UIActionSheet*)filterActionSheet:(id)sender;
 +(GPUImageFilter*)selectedFilter:(NSInteger)buttonIndex;

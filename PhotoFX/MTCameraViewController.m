@@ -87,14 +87,16 @@
     }
     
     GPUImageFilter *selectedFilter = [FilterUtilities selectedFilter:buttonIndex];
+    if (selectedFilter != nil) {
     
-    [stillCamera removeAllTargets];
-    [filter removeAllTargets];
-    
-    filter = selectedFilter;
-    GPUImageView *filterView = (GPUImageView *)self.view;
-    [filter addTarget:filterView];
-    [stillCamera addTarget:filter];
+        [stillCamera removeAllTargets];
+        [filter removeAllTargets];
+
+        filter = selectedFilter;
+        GPUImageView *filterView = (GPUImageView *)self.view;
+        [filter addTarget:filterView];
+        [stillCamera addTarget:filter];
+    }
     
 }
 

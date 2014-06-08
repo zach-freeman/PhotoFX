@@ -125,10 +125,11 @@
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
 {
     GPUImageFilter *selectedFilter = [FilterUtilities selectedFilter:buttonIndex];
-    
-    UIImage *filteredImage = [selectedFilter imageByFilteringImage:[displayImages objectAtIndex:self.photoCarousel.currentItemIndex]];
-    [displayImages replaceObjectAtIndex:self.photoCarousel.currentItemIndex withObject:filteredImage];
-    [self.photoCarousel reloadData];
+    if (selectedFilter != nil) {
+        UIImage *filteredImage = [selectedFilter imageByFilteringImage:[displayImages objectAtIndex:self.photoCarousel.currentItemIndex]];
+        [displayImages replaceObjectAtIndex:self.photoCarousel.currentItemIndex withObject:filteredImage];
+        [self.photoCarousel reloadData];
+    }
 }
 
 - (void)viewDidLoad
