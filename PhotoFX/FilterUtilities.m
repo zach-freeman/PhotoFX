@@ -45,11 +45,12 @@
             selectedFilter = [[GPUImagePinchDistortionFilter alloc] init];
             break;
         case 7:
-            selectedFilter = [[GPUImageFilter alloc] init];
-            break;
-        case 8:
             selectedFilter = [[GPUImageFilter alloc] initWithFragmentShaderFromFile:@"CustomShader"];
             break;
+        case 8:
+            selectedFilter = [[GPUImageFilter alloc] init];
+            break;
+
         default:
             break;
     }
