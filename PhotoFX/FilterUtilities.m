@@ -49,6 +49,7 @@
             break;
         case 8:
             selectedFilter = [[GPUImageFilter alloc] initWithFragmentShaderFromFile:@"CustomShader"];
+            break;
         default:
             break;
     }
