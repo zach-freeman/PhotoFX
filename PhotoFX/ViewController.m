@@ -119,7 +119,7 @@
 {
     UIActionSheet *filterActionSheet = [FilterUtilities filterActionSheet:self];
     
-    [filterActionSheet showFromToolbar:sender];
+    [filterActionSheet showInView:self.view];
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
