@@ -20,6 +20,7 @@
 		F9020F491944A7630080C958 /* MTCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9020F481944A7630080C958 /* MTCameraViewController.m */; };
 		F9020F4B1944B84E0080C958 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F9020F4A1944B84E0080C958 /* Icon.png */; };
 		F9020F4D1944B85A0080C958 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F9020F4C1944B85A0080C958 /* Icon@2x.png */; };
+		F97777521944E79900C74C37 /* FilterUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F97777511944E79900C74C37 /* FilterUtilities.m */; };
 		F99253231944983D00493CD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F99253221944983D00493CD3 /* Foundation.framework */; };
 		F99253251944983D00493CD3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F99253241944983D00493CD3 /* CoreGraphics.framework */; };
 		F99253271944983D00493CD3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F99253261944983D00493CD3 /* UIKit.framework */; };
@@ -34,6 +35,7 @@
 		F99253441944983D00493CD3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F99253261944983D00493CD3 /* UIKit.framework */; };
 		F992534C1944983D00493CD3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F992534A1944983D00493CD3 /* InfoPlist.strings */; };
 		F992534E1944983D00493CD3 /* PhotoFXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F992534D1944983D00493CD3 /* PhotoFXTests.m */; };
+		F9D13BD21944E4EC007B3545 /* CustomShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = F9D13BCD1944E49A007B3545 /* CustomShader.fsh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +95,8 @@
 		F9020F481944A7630080C958 /* MTCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCameraViewController.m; sourceTree = "<group>"; };
 		F9020F4A1944B84E0080C958 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		F9020F4C1944B85A0080C958 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		F97777501944E79900C74C37 /* FilterUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterUtilities.h; sourceTree = "<group>"; };
+		F97777511944E79900C74C37 /* FilterUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterUtilities.m; sourceTree = "<group>"; };
 		F992531F1944983D00493CD3 /* PhotoFX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoFX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F99253221944983D00493CD3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F99253241944983D00493CD3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -112,6 +116,7 @@
 		F99253491944983D00493CD3 /* PhotoFXTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhotoFXTests-Info.plist"; sourceTree = "<group>"; };
 		F992534B1944983D00493CD3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F992534D1944983D00493CD3 /* PhotoFXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoFXTests.m; sourceTree = "<group>"; };
+		F9D13BCD1944E49A007B3545 /* CustomShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = CustomShader.fsh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +231,9 @@
 				F99253291944983D00493CD3 /* Supporting Files */,
 				F9020F471944A7630080C958 /* MTCameraViewController.h */,
 				F9020F481944A7630080C958 /* MTCameraViewController.m */,
+				F9D13BCD1944E49A007B3545 /* CustomShader.fsh */,
+				F97777501944E79900C74C37 /* FilterUtilities.h */,
+				F97777511944E79900C74C37 /* FilterUtilities.m */,
 			);
 			path = PhotoFX;
 			sourceTree = "<group>";
@@ -368,6 +376,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9D13BD21944E4EC007B3545 /* CustomShader.fsh in Resources */,
 				F9020F4B1944B84E0080C958 /* Icon.png in Resources */,
 				F992533B1944983D00493CD3 /* Images.xcassets in Resources */,
 				F992532D1944983D00493CD3 /* InfoPlist.strings in Resources */,
@@ -396,6 +405,7 @@
 				F9020F461944A2A90080C958 /* UIImage+RoundedCorner.m in Sources */,
 				F99253331944983D00493CD3 /* AppDelegate.m in Sources */,
 				F9020F491944A7630080C958 /* MTCameraViewController.m in Sources */,
+				F97777521944E79900C74C37 /* FilterUtilities.m in Sources */,
 				F9020F441944A2A90080C958 /* UIImage+Alpha.m in Sources */,
 				F992532F1944983D00493CD3 /* main.m in Sources */,
 				F9020F451944A2A90080C958 /* UIImage+Resize.m in Sources */,
